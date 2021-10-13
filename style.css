@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 135px;
+
+    background-color: rgb(163, 163, 163);
+}
+
+/* Barra de cookies */
+.cookie-bar {
+    position: fixed;
+    
+    background-color: #222;
+
+    height: 120px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    display: grid;
+    grid-template-areas:
+        "terms terms button"
+        "link  link  button";
+}
+
+.cookie-bar .terms {
+    grid-area: terms;
+    display: flex;
+
+    padding-left: 10%;
+    height: 100%;
+
+    font-size: 30px;
+    color: white;
+}
+
+.cookie-bar .terms .text {
+    margin: auto auto auto 0;
+
+    font-family: sans-serif;
+}
+
+/* Para el link */
+.cookie-bar .link {
+    display: flex;
+    grid-area: link;
+
+    height: 100%;
+    padding-left: 10%;
+    
+    font-size: 30px;
+}
+
+.cookie-bar .link a:link {
+    margin: auto auto auto 0;
+
+    font-family: sans-serif;
+
+    color: #31A8F0;
+}
+.cookie-bar .link a:visited {
+    margin: auto auto auto 0;
+
+    font-family: sans-serif;
+
+    color: #f03131;
+}
+.cookie-bar .link a:hover {
+    margin: auto auto auto 0;
+
+    font-family: sans-serif;
+
+    color: rgb(198, 218, 255);
+}
+
+/* Para el botón */
+.cookie-bar .button-container {
+    grid-area: button;
+
+    display: flex;
+    
+    height: 100%;
+}
+
+.cookie-bar .button-container .button {
+    padding: 5px 14px;
+    margin: auto;
+
+    font-size: 30px;
+    background-color: #F1D600;
+
+    border-radius: 10px;
+    border-style: none;
+}
+
+.cookie-bar .button-container .button:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
